@@ -57,10 +57,7 @@
 
   /* body-sec */
   .body-sec {
-    margin-right: 50px;
-    margin-left: 50px; 
-    margin-top: 70px;
-    margin-bottom: 40px;
+    margin: 70px 50px 40px 50px;
   }
   
   /* project section */
