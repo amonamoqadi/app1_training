@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <!-- <script>
+        $(document).ready(function(){
+             $('a').on('click',function(){
+            var aID = $(this).attr('href');
+            var elem = $(''+aID).html();
+
+            $('#links').html(elem);
+            });
+       });
+    </script> -->
 </head>
 <body>
     <!-- header section -->
@@ -14,7 +24,7 @@
             <span id="links">
                 <a href="#projects-sec">Projects</a>
                 <a href="#about-sec">About</a>
-                <a href="#contact-sec">Contents</a>
+                <a href="#contact-sec">Contact</a>
             </span>
         </div>
         <div class="inner-container">
@@ -25,7 +35,8 @@
     <!-- body section -->
     <div class="body-sec">
         <!-- Projects section -->
-        <div class="projects-sec">
+        <div class="projects-sec"
+             id="projects-sec">
             <span>Projects</span>         
             <div class="project-inner">
                 <div class="project-section-img"> 
@@ -71,7 +82,8 @@
             </div>      
         </div>
         <!-- About section -->
-        <div class="about-sec">
+        <div  id="about-sec" class="about-sec"
+             >
             <div>
                 <p>About</p> 
                 <p class="parag">In addition to resize text and images, it is also common to use media queries in responsive web pages.
@@ -79,7 +91,7 @@
                     Example: resize the browser window to see that the three div elements below will display horizontally on large screens and stacked vertically on small screens.
                 </p> 
             </div>
-            <div>
+            <div class="about-inner">
                 <div class="about-img"> 
                     <img src="img/john.jpg"
                          alt="Jhon Doe"/>
@@ -114,8 +126,9 @@
                 </div> 
             </div> 
         </div>            
-        <!-- Contacts section -->
-        <div class="contact-sec">
+        <!-- Contact section -->
+        <div id="contact-sec" class="contact-sec" 
+             >
             <p>Contact</p>   
             <p class="parag">Lets get in touch talk about your next project.</p>  
             <input type="text" 
