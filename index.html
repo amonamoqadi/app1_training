@@ -9,39 +9,133 @@
     <!-- header section -->
     <div class="img-container">
         <div class="top-panner">
-            <p><b>BR </b> Architects</p>
-            <a href="">Projects</a>
-            <a href="">About</a>
-            <a href="">Contents</a>
+            <span id="bold-top-panner">BR</span>
+            <span>Architects</span>
+            <span id="links">
+                <a href="#projects-sec">Projects</a>
+                <a href="#about-sec">About</a>
+                <a href="#contact-sec">Contents</a>
+            </span>
         </div>
         <div class="inner-container">
-             <b>BR</b>
-             <p id="title-panner">Architects</p>    
+            <span><b>BR</b></span>
+            <p id="inner-title">Architects</p>    
         </div>
     </div>
-    <!-- Projects section -->
-    <div class="Projects-sec">
-        <p >Projects</p>
-        <div class="p-sec-img">
-            <div class="project-section-img"> 
-                <img src="img/summer.jpg" alt="summer house" />
-                <p>Summer House</p>     
+    <!-- body section -->
+    <div class="body-sec">
+        <!-- Projects section -->
+        <div class="projects-sec">
+            <span>Projects</span>         
+            <div class="project-inner">
+                <div class="project-section-img"> 
+                    <img src="img/summer.jpg"
+                         alt="summer house" />
+                    <span>Summer House</span>     
+                </div>
+                <div class="project-section-img"> 
+                    <img src="img/brick.jpg"
+                         alt="brick house" />
+                    <span>Brick House</span>
+                </div>
+                <div class="project-section-img"> 
+                    <img src="img/renovated.jpg"
+                         alt="renovated house" />
+                    <span>Renovated House</span>
+                </div>
+                <div class="project-section-img"> 
+                    <img src="img/barn.jpg" 
+                         alt="barn house" /> 
+                    <span>Barn House</span>
+                </div> 
+                <div class="project-section-img"> 
+                    <img src="img/summer.jpg"
+                         alt="summer house" />
+                    <span>Summer House</span>     
+                </div>
+                <div class="project-section-img"> 
+                    <img src="img/brick.jpg" 
+                         alt="brick house" />
+                    <span>Brick House</span>
+                </div>
+                <div class="project-section-img"> 
+                    <img src="img/renovated.jpg"
+                         alt="renovated house" />
+                    <span>Renovated House</span>
+                </div>
+                <div class="project-section-img"> 
+                    <img src="img/barn.jpg"
+                         alt="barn house" /> 
+                    <span>Barn House</span>
+                </div> 
+            </div>      
+        </div>
+        <!-- About section -->
+        <div class="about-sec">
+            <div>
+                <p>About</p> 
+                <p class="parag">In addition to resize text and images, it is also common to use media queries in responsive web pages.
+                    With media queries you can define completely different styles for different browser sizes.
+                    Example: resize the browser window to see that the three div elements below will display horizontally on large screens and stacked vertically on small screens.
+                </p> 
             </div>
-            <div class="project-section-img"> 
-                <img src="img/brick.jpg" alt="brick house" />
-                <p>Brick House</p>
-            </div>
-            <div class="project-section-img"> 
-                <img src="img/renovated.jpg" alt="renovated house" />
-                <p>Renovated House</p>
-            </div>
-            <div class="project-section-img"> 
-                <img src="img/barn.jpg" alt="barn house" /> 
-                <p>Barn House</p>
+            <div>
+                <div class="about-img"> 
+                    <img src="img/john.jpg"
+                         alt="Jhon Doe"/>
+                    <p>John Doe</p>
+                    <p class="career">CEO & Founder</p>
+                    <p class="parag">In addition to resize text and images, it is also common to use media queries in responsive web pages.</p>
+                    <button type="button">Contact</button>  
+                </div>
+                <div class="about-img"> 
+                    <img src="img/jane.jpg" 
+                         alt="Jane Doe"/> 
+                    <p>Jane Doe</p>                      
+                    <p class="career">Architecter</p>                     
+                    <p class="parag">In addition to resize text and images, it is also common to use media queries in responsive web pages.</p>
+                    <button type="button">Contact</button> 
+                </div>
+                <div class="about-img"> 
+                        <img src="img/dan.jpg" 
+                             alt="mike"/>  
+                        <p>Mike Ross</p>                        
+                        <p class="career">Architecter</p>                    
+                        <p class="parag">In addition to resize text and images, it is also common to use media queries in responsive web pages.</p>
+                        <button type="button">Contact</button> 
+                </div>
+                <div class="about-img"> 
+                        <img src="img/dan.jpg"
+                             alt="Dan"/>                      
+                        <p>Dan Star</p>                      
+                        <p class="career">Architecter</p>                     
+                        <p class="parag">In addition to resize text and images, it is also common to use media queries in responsive web pages.</p>
+                        <button type="button">Contact</button>
+                </div> 
             </div> 
-         </div>      
-    </div>
-    <!-- About section -->
-    <!-- Contacts section -->
+        </div>            
+        <!-- Contacts section -->
+        <div class="contact-sec">
+            <p>Contact</p>   
+            <p class="parag">Lets get in touch talk about your next project.</p>  
+            <input type="text" 
+                   id="name" 
+                   name="Name" 
+                   placeholder="Name"> 
+            <input type="email"
+                   id="email" 
+                   name="Email"
+                   placeholder="Email"> 
+            <input type="text"
+                   id="subject"
+                   name="Subject"
+                   placeholder="Subject"> 
+            <input type="text"
+                   id="comment"
+                   name="Comment" 
+                   placeholder="Comment"> 
+            <button> SEND MESSAGE</button>
+        </div>
+    </div>    
 </body>
 </html>
