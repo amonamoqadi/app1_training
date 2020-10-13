@@ -4,150 +4,160 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <!-- <script>
-        $(document).ready(function(){
-             $('a').on('click',function(){
-            var aID = $(this).attr('href');
-            var elem = $(''+aID).html();
-
-            $('#links').html(elem);
-            });
-       });
-    </script> -->
 </head>
 <body>
     <!-- header section -->
-    <div class="img-container">
-        <div class="top-panner">
-            <span id="bold-top-panner">BR</span>
+    <div class="Container">
+        <div class="Container__Panner">
+            <span class="Panner__BoldPanner">BR</span>
             <span>Architects</span>
-            <span id="links">
+            <span class="Panner__Links">
                 <a href="#projects-sec">Projects</a>
                 <a href="#about-sec">About</a>
                 <a href="#contact-sec">Contact</a>
             </span>
         </div>
-        <div class="inner-container">
-            <span><b>BR</b></span>
-            <p id="inner-title">Architects</p>    
+        <div class="Container__Inner">
+            <span class="Inner__Title"><b>BR</b></span>
+            <p class="Inner__Title Inner__Title--dispaly">Architects</p>    
         </div>
     </div>
     <!-- body section -->
-    <div class="body-sec">
+    <div class="Body">
         <!-- Projects section -->
-        <div class="projects-sec"
+        <div class="Body__ProjectsSec"
              id="projects-sec">
             <span>Projects</span>         
-            <div class="project-inner">
-                <div class="project-section-img"> 
-                    <img src="img/summer.jpg"
+            <div class="ProjectsSec__ProjectsInner">
+                <div class="ProjectsInner__ImgTitle"> 
+                    <img class="ImgTitle__Img"
+                         src="img/summer.jpg"
                          alt="summer house" />
-                    <span>Summer House</span>     
+                    <span class="ImgTitle__Title">Summer House</span>     
                 </div>
-                <div class="project-section-img"> 
-                    <img src="img/brick.jpg"
+                <div class="ProjectsInner__ImgTitle"> 
+                    <img class="ImgTitle__Img"
+                         src="img/brick.jpg"
                          alt="brick house" />
-                    <span>Brick House</span>
+                    <span class="ImgTitle__Title">Brick House</span>
                 </div>
-                <div class="project-section-img"> 
-                    <img src="img/renovated.jpg"
+                <div class="ProjectsInner__ImgTitle"> 
+                    <img class="ImgTitle__Img"
+                         src="img/renovated.jpg"
                          alt="renovated house" />
-                    <span>Renovated House</span>
+                    <span class="ImgTitle__Title">Renovated House</span>
                 </div>
-                <div class="project-section-img"> 
-                    <img src="img/barn.jpg" 
+                <div class="ProjectsInner__ImgTitle"> 
+                    <img class="ImgTitle__Img"
+                         src="img/barn.jpg" 
                          alt="barn house" /> 
-                    <span>Barn House</span>
+                    <span class="ImgTitle__Title">Barn House</span>
                 </div> 
-                <div class="project-section-img"> 
-                    <img src="img/summer.jpg"
+                <div class="ProjectsInner__ImgTitle"> 
+                    <img class="ImgTitle__Img"
+                         src="img/summer.jpg"
                          alt="summer house" />
-                    <span>Summer House</span>     
+                    <span class="ImgTitle__Title">Summer House</span>     
                 </div>
-                <div class="project-section-img"> 
-                    <img src="img/brick.jpg" 
+                <div class="ProjectsInner__ImgTitle"> 
+                    <img class="ImgTitle__Img"
+                         class="ImgTitle__Img"src="img/brick.jpg" 
                          alt="brick house" />
-                    <span>Brick House</span>
+                    <span class="ImgTitle__Title">Brick House</span>
                 </div>
-                <div class="project-section-img"> 
-                    <img src="img/renovated.jpg"
+                <div class="ProjectsInner__ImgTitle"> 
+                    <img class="ImgTitle__Img"
+                         src="img/renovated.jpg"
                          alt="renovated house" />
-                    <span>Renovated House</span>
+                    <span class="ImgTitle__Title">Renovated House</span>
                 </div>
-                <div class="project-section-img"> 
-                    <img src="img/barn.jpg"
+                <div class="ProjectsInner__ImgTitle"> 
+                    <img class="ImgTitle__Img"
+                         src="img/barn.jpg"
                          alt="barn house" /> 
-                    <span>Barn House</span>
+                    <span class="ImgTitle__Title">Barn House</span>
                 </div> 
             </div>      
         </div>
         <!-- About section -->
-        <div  id="about-sec" class="about-sec"
-             >
+        <div class="Body__AboutSec"
+             id="about-sec">
             <div>
                 <p>About</p> 
-                <p class="parag">In addition to resize text and images, it is also common to use media queries in responsive web pages.
+                <p class="Body__Parag">In addition to resize text and images, it is also common to use media queries in responsive web pages.
                     With media queries you can define completely different styles for different browser sizes.
                     Example: resize the browser window to see that the three div elements below will display horizontally on large screens and stacked vertically on small screens.
                 </p> 
             </div>
-            <div class="about-inner">
-                <div class="about-img"> 
-                    <img src="img/john.jpg"
+            <div class="AboutSec__AboutInner">
+                <div class="AboutInner__ImgInfo"> 
+                    <img class="ImgInfo__Img"
+                         src="img/john.jpg"
                          alt="Jhon Doe"/>
                     <p>John Doe</p>
-                    <p class="career">CEO & Founder</p>
-                    <p class="parag">In addition to resize text and images, it is also common to use media queries in responsive web pages.</p>
-                    <button type="button">Contact</button>  
+                    <p class="ImgInfo__Career">CEO & Founder</p>
+                    <p class="Body__Parag">In addition to resize text and images, it is also common to use media queries in responsive web pages.</p>
+                    <button class="ImgInfo__Btn"
+                            type="button">Contact</button>  
                 </div>
-                <div class="about-img"> 
-                    <img src="img/jane.jpg" 
+                <div class="AboutInner__ImgInfo"> 
+                    <img class="ImgInfo__Img"
+                         src="img/jane.jpg" 
                          alt="Jane Doe"/> 
                     <p>Jane Doe</p>                      
-                    <p class="career">Architecter</p>                     
-                    <p class="parag">In addition to resize text and images, it is also common to use media queries in responsive web pages.</p>
-                    <button type="button">Contact</button> 
+                    <p class="ImgInfo__Career">Architecter</p>                     
+                    <p class="Body__Parag">In addition to resize text and images, it is also common to use media queries in responsive web pages.</p>
+                    <button class="ImgInfo__Btn"
+                            type="button">Contact</button> 
                 </div>
-                <div class="about-img"> 
-                        <img src="img/dan.jpg" 
-                             alt="mike"/>  
-                        <p>Mike Ross</p>                        
-                        <p class="career">Architecter</p>                    
-                        <p class="parag">In addition to resize text and images, it is also common to use media queries in responsive web pages.</p>
-                        <button type="button">Contact</button> 
+                <div class="AboutInner__ImgInfo"> 
+                    <img class="ImgInfo__Img"
+                        src="img/dan.jpg" 
+                        alt="mike"/>  
+                    <p>Mike Ross</p>                        
+                    <p class="ImgInfo__Career">Architecter</p>                    
+                    <p class="Body__Parag">In addition to resize text and images, it is also common to use media queries in responsive web pages.</p>
+                    <button class="ImgInfo__Btn"
+                            type="button">Contact</button> 
                 </div>
-                <div class="about-img"> 
-                        <img src="img/dan.jpg"
-                             alt="Dan"/>                      
-                        <p>Dan Star</p>                      
-                        <p class="career">Architecter</p>                     
-                        <p class="parag">In addition to resize text and images, it is also common to use media queries in responsive web pages.</p>
-                        <button type="button">Contact</button>
+                <div class="AboutInner__ImgInfo"> 
+                    <img class="ImgInfo__Img"
+                        src="img/dan.jpg"
+                        alt="Dan"/>                      
+                    <p>Dan Star</p>                      
+                    <p class="ImgInfo__Career">Architecter</p>                     
+                    <p class="Body__Parag">In addition to resize text and images, it is also common to use media queries in responsive web pages.</p>
+                    <button class="ImgInfo__Btn"
+                            type="button">Contact</button>
                 </div> 
             </div> 
         </div>            
         <!-- Contact section -->
-        <div id="contact-sec" class="contact-sec" 
-             >
+        <div class="Body__ContactSec" 
+             id="contact-sec">
             <p>Contact</p>   
-            <p class="parag">Lets get in touch talk about your next project.</p>  
-            <input type="text" 
+            <p class="Body__Parag">Lets get in touch talk about your next project.</p>  
+            <input class="ContactSec__Input"
+                   type="text" 
                    id="name" 
                    name="Name" 
                    placeholder="Name"> 
-            <input type="email"
+            <input class="ContactSec__Input"
+                   type="email"
                    id="email" 
                    name="Email"
                    placeholder="Email"> 
-            <input type="text"
+            <input class="ContactSec__Input"
+                   type="text"
                    id="subject"
                    name="Subject"
                    placeholder="Subject"> 
-            <input type="text"
+            <input class="ContactSec__Input"
+                   type="text"
                    id="comment"
                    name="Comment" 
                    placeholder="Comment"> 
-            <button> SEND MESSAGE</button>
+            <button class="ContactSec__Btn"> SEND MESSAGE</button>
         </div>
     </div>    
 </body>
