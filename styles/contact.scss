@@ -1,0 +1,23 @@
+.contact-sec {
+    margin-top: 90px;
+    font-size: 22px;
+  
+  input {
+    width: 100%;
+    height: 30px;
+    margin: 0px 0px 15px;
+    border: 1px solid #ccc;
+  }
+  
+  input::placeholder {
+    padding: 10px;
+    font-size: 15px;
+  }
+  
+  button { 
+    padding: 10px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+  }
+}

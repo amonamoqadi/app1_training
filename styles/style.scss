@@ -1,0 +1,122 @@
+@import "./container";
+@import "./projects";
+@import "./about";
+@import "./contact";
+
+$black-color: #000;
+$white-color: #fff;
+
+@mixin flexable {
+    display: flex;
+    flex-wrap: wrap;
+}
+@mixin flex-inner {
+    width: 50%;
+    padding-right: 10px;
+}
+body {
+    margin: 0px;
+    font-family: "Open Sans", Helvetica, sans-serif;
+}
+
+// container here
+
+.body{
+  margin: 70px 50px 40px 50px;
+  vertical-align: top;
+}
+.parag {
+    font-size: 17px;
+}
+
+//project section
+//About section 
+//contact section
+
+/* media query */
+@media only screen and (min-width: 768px)
+{
+    * {
+    box-sizing: border-box;
+    }
+
+    .body {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .container {
+        height: 380px;
+
+        .container-inner {
+        font-size: 35px;
+        letter-spacing: 5px;
+        
+
+            .title-display {
+                display: inline;
+                margin-left: 10px;
+                padding: 0px;
+                opacity: 1;
+                font-size: 35px;
+                letter-spacing: 3px;
+                background: initial;
+            }
+        }
+        .panner{
+            .links {
+                display: inline-block;
+                position: absolute;
+                margin-top: 5px;
+                right: 25px;
+            }
+            .links a 
+            a:hover,
+            a:link,
+            a:visited,
+            a:active {
+                margin-right: 20px;
+                color: $black-color;
+                text-decoration: none;
+            }
+       }
+    }
+
+    /* project section */
+    .projects-inner {
+        @include flexable();
+
+        .img-title {
+           @include flex-inner();
+        }
+    }
+
+    /* about section */
+    .about-inner {
+        @include flexable();
+
+        .img-info {
+            @include flex-inner();
+        }
+    }
+}
+
+@media only screen and (min-width: 992px)
+{
+    .container {
+       height: 400px; 
+    }
+
+    /* project section */
+    .projects-inner {
+        .img-title {
+        width: 25%;
+        } 
+    }
+    /* about section */
+    .about-inner {
+        .img-info {  
+           width: 25%; 
+        }
+    }
+}

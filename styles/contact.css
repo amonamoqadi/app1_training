@@ -1,0 +1,39 @@
+.contact-sec {
+  margin-top: 90px;
+  font-size: 22px;
+}
+
+.contact-sec input {
+  width: 100%;
+  height: 30px;
+  margin: 0px 0px 15px;
+  border: 1px solid #ccc;
+}
+
+.contact-sec input::-webkit-input-placeholder {
+  padding: 10px;
+  font-size: 15px;
+}
+
+.contact-sec input:-ms-input-placeholder {
+  padding: 10px;
+  font-size: 15px;
+}
+
+.contact-sec input::-ms-input-placeholder {
+  padding: 10px;
+  font-size: 15px;
+}
+
+.contact-sec input::placeholder {
+  padding: 10px;
+  font-size: 15px;
+}
+
+.contact-sec button {
+  padding: 10px;
+  border: none;
+  background-color: #000;
+  color: #fff;
+}
+/*# sourceMappingURL=contact.css.map */
